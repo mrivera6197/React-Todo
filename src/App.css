@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Turret+Road:wght@700&display=swap');
 html,
 body {
   width: 100%;
@@ -8,7 +8,9 @@ body {
 }
 
 body {
-  background-color: #2d2d37;
+  background-color: white;
+  background-image: url('https://images.unsplash.com/photo-1501769214405-5e5ee5125a02?ixlib=rb-1.2.1&auto=format&fit=crop&w=998&q=80');
+  background-size: 100%;
 }
 
 h1,
@@ -20,8 +22,8 @@ h6,
 div,
 p,
 span {
-  color: white;
-  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .App {
@@ -34,8 +36,10 @@ span {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 10%;
 }
 h1 {
   text-align: left;
@@ -49,16 +53,18 @@ h1 {
   margin: 0 auto;
 }
 .task {
-  background-color: blue;
+  background-color: #F0F8FF;
   width: 45%;
   text-align: left;
   margin: 4px 0;
   padding-left: 8px;
   cursor: pointer;
+  color: grey;
+  text-align: center;
 }
 
 .task.completed {
-  background-color: #d17d7c;
+  background-color: #5F9EA0;
   text-decoration: line-through;
 }
 form {
@@ -67,23 +73,25 @@ form {
   justify-content: flex-end;
 }
 form > input {
-  background-color: #2d2d37;
+  background-color: white;
+  font-family: 'Exo 2', sans-serif;
   border: 0;
   padding: 6px 0;
   font-size: 1rem;
   width: 240px;
   outline: 0;
-  color: white;
-  border-bottom: 1px solid blue;
+  color: grey;
+  border-bottom: 1px solid #F0F8FF;
   margin-right: 8px;
 }
 
 button {
-  background-color: blue;
-  border: 1px solid blue;
-  color: white;
+  background-color: #F0F8FF;
+  border: 1px solid#F0F8FF;
+  color: grey;
   font-size: 16px;
   padding: 6px 14px;
+  font-family: 'Exo 2', sans-serif;
 }
 
 input::placeholder {
