@@ -3,12 +3,23 @@
 
 import React from 'react'
 
-class TodoList extends React.Component {
-    render () {
+import Todo from './Todo'
+
+const TodoList = props => {
+
+        const handleClick = () => {
+            props.clearItems()
+        }
+    
         return (
-            <h1>hi</h1>
+            <div className='todo-list'>
+                {props.tasks.map(task => (
+                    <Todo handleToggleItem={props.handleToggleItem}key={task.id} task={task}/>
+                ))}
+                <button onClick={handleClick} className='clear-btn'>
+                    Clear</button>
+            </div>
         )
     }
-}
 
 export default TodoList
